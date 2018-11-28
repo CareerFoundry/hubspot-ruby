@@ -1,8 +1,6 @@
 # HubSpot REST API wrappers for ruby
 
-[![Build Status](https://travis-ci.org/adimichele/hubspot-ruby.svg?branch=master)](https://travis-ci.org/adimichele/hubspot-ruby)
-
-**This is the master branch and contains unreleased and potentially breaking changes. If you are looking for the most recent stable release you want the [v0-stable branch](https://github.com/adimichele/hubspot-ruby/tree/v0-stable).**
+[![Build Status](https://travis-ci.org/adimichele/hubspot-ruby.svg?branch=v0-stable)](https://travis-ci.org/adimichele/hubspot-ruby)
 
 Wraps the HubSpot REST API for convenient access from ruby applications.
 
