@@ -24,6 +24,7 @@ require 'hubspot/owner'
 require 'hubspot/engagement'
 require 'hubspot/subscription'
 require 'hubspot/oauth'
+require 'hubspot/file'
 
 # V3
 require 'hubspot/V3/owner'
