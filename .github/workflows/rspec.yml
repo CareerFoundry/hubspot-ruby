@@ -12,7 +12,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.7
-        bundler-cache: true
+        bundler-cache: false
 
     - name: Install dependencies
       run: bundle install

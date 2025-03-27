@@ -26,7 +26,7 @@ require 'hubspot/subscription'
 require 'hubspot/oauth'
 
 # V3
-require 'hubspot/v3/owner'
+require 'hubspot/V3/owner'
 
 module Hubspot
   def self.configure(config={})
