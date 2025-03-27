@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners?email=nonexistent@example.com&includeInactive=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 20:11:14 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '14'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 927189259f9ce511-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - 73e30ec7-2b66-4053-a5e5-522f788d97e7
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999983'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '189'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=x8VLQU0b9Odkokb9DtNgHaicvvsfxvhK1j76ZwVXtjA-1743106274-1.0.1.1-47UkK6jFeBdoPqkHDMl1Sx1O8_dHoRd3iXhTEDd66f38HOT5Y6Wzo1akxF4DsKyDs2yE0cb4RlByCgEY9jYIGkNYOnQdSalwDGdthzaG4vs;
+        path=/; expires=Thu, 27-Mar-25 20:41:14 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=pV3QlhhIwJ2GxG2Fw5C5PxLX1Uz9poQCvnoI8xelM1882pApzvca3RcBZdMi9apBiqb8LBna5%2BlZeU%2B9AHbdUJIrL1ll1IsNUw5%2Bwz42WTuBHCayaJqgC7oqGLrwbviFSWltazudBGk7AG0z"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"results":[]}'
+  recorded_at: Thu, 27 Mar 2025 20:11:14 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners?email=ailene@cummings-will.example&includeInactive=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 20:16:08 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '218'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 927190532adbe512-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - dc4e9949-3ee0-45b8-8cdd-4ea23274cfcc
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999979'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '187'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=PoEZpWzfCYi7r42N2N5GUb1UCQszjuQTjILeHDeaCgQ-1743106568-1.0.1.1-ZX.QZi8pTKyB1O2sJemMxfFK2lySGKFVUQHDQ2kSeFyM3CVsgoUrPIAUz7xgPxk2LuGe5oiijfztpbqNorbyLu3DZCr5EyC7_83Smv5KSQE;
+        path=/; expires=Thu, 27-Mar-25 20:46:08 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9LVoZ3VRzR76B7hW7MAZtcsPiO7dT4DRJV6J%2BNb03o%2BkVZGOvOJr23B0O9DLPuJVi42mXkl77nKoIHK3rAb%2Fy6vHykQg5SnYP%2B6AQGRFBCPQMB%2BjiHpf53ZjORv4K5j4BEAD9r0FLcb9rwnr"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"277857","email":"ailene@cummings-will.example","type":"PERSON","firstName":"Ken","lastName":"Harber","userId":801536,"createdAt":"2025-03-27T20:59:55+01:00"}]}'
+  recorded_at: Thu, 27 Mar 2025 20:16:08 GMT
+recorded_with: VCR 6.3.1
