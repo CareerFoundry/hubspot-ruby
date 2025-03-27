@@ -1,0 +1,23 @@
+name: Continuous integration
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.1.6
+        bundler-cache: true
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Run tests
+      env:
+        HUBSPOT_ACCESS_TOKEN: demo
+        HUBSPOT_API_KEY: demo
+      run: bundle exec rspec
