@@ -25,6 +25,9 @@ require 'hubspot/engagement'
 require 'hubspot/subscription'
 require 'hubspot/oauth'
 
+# V3
+require 'hubspot/V3/owner'
+
 module Hubspot
   def self.configure(config={})
     Hubspot::Config.configure(config)

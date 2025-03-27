@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners/277857?includeInactive=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 20:22:55 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '207'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 92719a447a105902-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - d0954779-e16e-45ae-8bc3-f149ce73ad10
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999977'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '189'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=bk3Ld5kWfyO6dejAoZqB43x60VWR15EzEfI00sn2Xg4-1743106975-1.0.1.1-d.aK2Fa7AFvzelK4Bdf.mFC.Ec9pDI7SkV6Sjej7KFdgBMqJAgbxga5JZXCkciBAmmwadqN4RHoNA906YCx96Ks6OQxNmb2OjhlZ_4GgT14;
+        path=/; expires=Thu, 27-Mar-25 20:52:55 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fjhAy81D%2FtZ7s4%2FydDaPo0jSxaVyKfFeWS40ckxddrwkDxsyAbfE%2FMzgaXhSruv60P1n06%2FllKc5DaFn2Y9XjH4Ib%2BuAxZFcsWhqzMMncHm0%2FvzbAsP95qGjBxpDp7zB7lDZd%2FhKssJDG%2BP1"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"277857","email":"ailene@cummings-will.example","type":"PERSON","firstName":"Ken","lastName":"Harber","userId":801536,"createdAt":"2025-03-27T20:59:55+01:00"}'
+  recorded_at: Thu, 27 Mar 2025 20:22:55 GMT
+recorded_with: VCR 6.3.1
