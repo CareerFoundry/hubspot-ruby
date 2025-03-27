@@ -1,0 +1,225 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners?includeInactive=false&limit=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 19:12:23 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1429'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 927132eee86be516-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - 7381accd-e4b8-4376-924c-51f72aecc118
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999988'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '189'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=1X067kSaupIMVLiygkT6aESDvHt7.uhEs_Xx4Y593_s-1743102743-1.0.1.1-ODL4YIr3cUzD9AeeMW8rcUghuawdTchXfTDdZEMTpzKtafkG0udSkZ4zQImyVxOqFar3Oe6ZlSuRgfh88_csKYF8kUrYOCkqvuNoKH8.LhA;
+        path=/; expires=Thu, 27-Mar-25 19:42:23 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=dFbS3yAOTnF7LrHrKxEezXXWkq9e5OeY8v8aKAPq3C4eXpNbC3o%2F6d6cbIVvLKdX0E3hrns7Opto13l68nxSuACbDl9JDRuN6YyR8lyGslEOYF3OeYOc9XEc3%2FIGA6%2Fu8CuMqCLVBwDnq14g"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"277857","email":"ailene@cummings-will.example","type":"PERSON","firstName":"Ken","lastName":"Harber","userId":801536,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"867536","email":"henry@rippin.test","type":"PERSON","firstName":"Alejandra","lastName":"Heidenreich","userId":835677,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"121530","email":"jamar.hermiston@mitchell-kub.test","type":"PERSON","firstName":"Lilian","lastName":"Bailey","userId":972356,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"125701","email":"aaron@skiles-adams.test","type":"PERSON","firstName":"Kayleen","lastName":"Lubowitz","userId":604474,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"664904","email":"jaymie_nader@christiansen.example","type":"PERSON","firstName":"Josette","lastName":"Luettgen","userId":221373,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"687818","email":"bart.kuhic@stokes-zemlak.example","type":"PERSON","firstName":"Chelsie","lastName":"Leannon","userId":721639,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"182963","email":"fred@okuneva-goodwin.test","type":"PERSON","firstName":"Daron","lastName":"Zemlak","userId":112136,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"481570","email":"christopher@jacobson.test","type":"PERSON","firstName":"Phillip","lastName":"Toy","userId":765811,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"287410","email":"jamey@beahan-pollich.example","type":"PERSON","firstName":"Morton","lastName":"Fahey","userId":455595,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"394267","email":"nigel.aufderhar@thompson.example","type":"PERSON","firstName":"Syreeta","lastName":"West","userId":129554,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"307724","email":"freeda.yost@legros.example","type":"PERSON","firstName":"Toby","lastName":"Larson","userId":241675,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"408663","email":"kurtis@grant.example","type":"PERSON","firstName":"Les","lastName":"Wehner","userId":845540,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"329543","email":"vina@labadie.test","type":"PERSON","firstName":"Herb","lastName":"Mann","userId":704971,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"401148","email":"gerald_mante@towne.example","type":"PERSON","firstName":"Pete","lastName":"Friesen","userId":155912,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"639082","email":"bryant_langworth@grimes-schumm.example","type":"PERSON","firstName":"Anderson","lastName":"Johnston","userId":294181,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"553365","email":"adele@gusikowski-mayer.test","type":"PERSON","firstName":"Kecia","lastName":"Reinger","userId":628971,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"142321","email":"belle.mraz@bednar.test","type":"PERSON","firstName":"Esteban","lastName":"Vandervort","userId":186437,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"700321","email":"jalisa@rippin.test","type":"PERSON","firstName":"Herb","lastName":"Heller","userId":235119,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"940858","email":"scot@west-shields.example","type":"PERSON","firstName":"Germaine","lastName":"Shields","userId":330074,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"739945","email":"loreta.stracke@beahan.test","type":"PERSON","firstName":"Hipolito","lastName":"Schmitt","userId":502849,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"721886","email":"lilliam@dare.example","type":"PERSON","firstName":"Spencer","lastName":"Schulist","userId":974969,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"936586","email":"aja.barrows@casper-cole.example","type":"PERSON","firstName":"Trinidad","lastName":"Prosacco","userId":260113,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"489523","email":"todd_murazik@howe.test","type":"PERSON","firstName":"Sierra","lastName":"Rodriguez","userId":775376,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"549705","email":"danial_stamm@sawayn.test","type":"PERSON","firstName":"Minda","lastName":"Rice","userId":861770,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false},{"id":"393486","email":"katrice@kohler.test","type":"PERSON","firstName":"Sanford","lastName":"Batz","userId":444673,"createdAt":"2025-03-27T20:59:55+01:00","updatedAt":"2025-03-27T20:59:55+01:00","archived":false}]}'
+  recorded_at: Thu, 27 Mar 2025 19:12:23 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners?includeInactive=false&limit=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 19:13:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '532'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 92713416c85ae523-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - b2cc64af-cc81-46bc-b806-6bbcaca4f8eb
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999987'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '189'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=PdLDvanR57vkx8TKoRRjK7eLqq7LafDTJGpwkbzqtRI-1743102790-1.0.1.1-G_FdSveB.s8hS8.JEOMO.0HbE9J.Mi2DkXOjZ0ASVbnZz2HMHiry8nu0Rsefjxcz1B_X4Uyg6SZcoMAkv3uzaINfyY5zAVdZi64tSSGBH90;
+        path=/; expires=Thu, 27-Mar-25 19:43:10 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=bewQUj%2BnGhCRjS7rdy%2Fep3jJjTVyBvMmMibeLxgAc3Ake%2FRHlm3Fne9rsR0CPoOQNFLfmKmEQ0rmMPhME%2BEfgmt2H%2Fzk651UCXM3UlEhLwOe956fU9q2vV1HUg4geVxeKmUU9CDaG51F%2FqQj"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"76834051","email":"paulina@careerfoundry.com","type":"PERSON","firstName":"Paulina","lastName":"Kluzek","userId":76834051,"userIdIncludingInactive":76834051,"createdAt":"2025-01-29T14:17:55.981Z","updatedAt":"2025-01-31T10:35:53.475Z","archived":false},{"id":"240826973","email":"suhaf@careerfoundry.com","type":"PERSON","firstName":"Suhaf
+        Azam","lastName":"Butt","userId":25822182,"userIdIncludingInactive":25822182,"createdAt":"2022-10-06T10:04:12.461Z","updatedAt":"2025-03-04T14:44:13.881Z","archived":false},{"id":"240826976","email":"william@careerfoundry.com","type":"PERSON","firstName":"William","lastName":"at
+        CareerFoundry","userId":5304044,"userIdIncludingInactive":5304044,"createdAt":"2022-10-06T10:04:12.607Z","updatedAt":"2023-03-22T08:57:26.605Z","archived":false},{"id":"240826979","email":"tetiana@careerfoundry.com","type":"PERSON","firstName":"Tetiana","lastName":"Rabiievska","userId":12776077,"userIdIncludingInactive":12776077,"createdAt":"2022-10-06T10:04:12.730Z","updatedAt":"2024-03-21T14:13:39.724Z","archived":false},{"id":"240826980","email":"invoices@careerfoundry.com","type":"PERSON","firstName":"CareerFoundry","lastName":"Invoices","userId":4470607,"userIdIncludingInactive":4470607,"createdAt":"2022-10-06T10:04:12.771Z","updatedAt":"2022-10-06T10:04:12.771Z","archived":false}],"paging":{"next":{"after":"MjQwODI2OTgx","link":"https://api.hubapi.com/crm/v3/owners?limit=5&includeInactive=false&after=MjQwODI2OTgx"}}}'
+  recorded_at: Thu, 27 Mar 2025 19:13:10 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/crm/v3/owners?includeInactive=true&limit=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer demo
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Mar 2025 19:13:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '1429'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 9271343e8fd7e527-TXL
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - origin, accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Content-Type-Options:
+      - nosniff
+      X-Hubspot-Correlation-Id:
+      - ceb3872a-a38f-4a9d-bbc4-a51032bd1c2a
+      X-Hubspot-Ratelimit-Daily:
+      - '1000000'
+      X-Hubspot-Ratelimit-Daily-Remaining:
+      - '999986'
+      X-Hubspot-Ratelimit-Interval-Milliseconds:
+      - '10000'
+      X-Hubspot-Ratelimit-Max:
+      - '190'
+      X-Hubspot-Ratelimit-Remaining:
+      - '188'
+      X-Hubspot-Ratelimit-Secondly:
+      - '19'
+      X-Hubspot-Ratelimit-Secondly-Remaining:
+      - '18'
+      Set-Cookie:
+      - __cf_bm=HKTHEUGcAANo8qaFzGxMeDalbep4oKOnVN75v3Npikc-1743102796-1.0.1.1-601HQdHgWhRt8Q84eEgrINQjx2c_ryyEnQ1sGghfDzLYj_ew2yuRlict1EemPbjhKFrXvTIC3uMWiWvLNN0SLHNDybAN0OL_ctZP2sZ4WGw;
+        path=/; expires=Thu, 27-Mar-25 19:43:16 GMT; domain=.hubapi.com; HttpOnly;
+        Secure; SameSite=None
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Z0IULCeFGKk46szQGWTv8HnTFD0QRsLsyihXAwV8gRbXMeOo6GdEqtVU84Wcp%2Fa8N3fJ0g9X96HgjsTJrqLRdNGtkUbH%2FkpAgiFkR6ALfop%2FTf4otHHX90eUb9kc4PtBmiJjTILSBquI%2BLti"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":"76834051","email":"paulina@careerfoundry.com","type":"PERSON","firstName":"Paulina","lastName":"Kluzek","userId":76834051,"userIdIncludingInactive":76834051,"createdAt":"2025-01-29T14:17:55.981Z","updatedAt":"2025-01-31T10:35:53.475Z","archived":false},{"id":"240826973","email":"suhaf@careerfoundry.com","type":"PERSON","firstName":"Suhaf
+        Azam","lastName":"Butt","userId":25822182,"userIdIncludingInactive":25822182,"createdAt":"2022-10-06T10:04:12.461Z","updatedAt":"2025-03-04T14:44:13.881Z","archived":false},{"id":"240826976","email":"william@careerfoundry.com","type":"PERSON","firstName":"William","lastName":"at
+        CareerFoundry","userId":5304044,"userIdIncludingInactive":5304044,"createdAt":"2022-10-06T10:04:12.607Z","updatedAt":"2023-03-22T08:57:26.605Z","archived":false},{"id":"240826979","email":"tetiana@careerfoundry.com","type":"PERSON","firstName":"Tetiana","lastName":"Rabiievska","userId":12776077,"userIdIncludingInactive":12776077,"createdAt":"2022-10-06T10:04:12.730Z","updatedAt":"2024-03-21T14:13:39.724Z","archived":false},{"id":"240826980","email":"invoices@careerfoundry.com","type":"PERSON","firstName":"CareerFoundry","lastName":"Invoices","userId":4470607,"userIdIncludingInactive":4470607,"createdAt":"2022-10-06T10:04:12.771Z","updatedAt":"2022-10-06T10:04:12.771Z","archived":false},{"id":"240826981","email":"orkan@careerfoundry.com","type":"PERSON","firstName":"Aykut
+        Orkan","lastName":"Yalcin","userId":25356845,"userIdIncludingInactive":25356845,"createdAt":"2022-10-06T10:04:12.811Z","updatedAt":"2023-03-22T07:58:32.537Z","archived":false},{"id":"240826982","email":"koray@careerfoundry.com","type":"PERSON","firstName":"Koray","lastName":"Canut","userId":44298902,"userIdIncludingInactive":44298902,"createdAt":"2022-10-06T10:04:12.852Z","updatedAt":"2023-02-13T11:25:31.585Z","archived":false},{"id":"240826985","email":"vik@careerfoundry.com","type":"PERSON","firstName":"Victoria","lastName":"at
+        CareerFoundry","userId":4110352,"userIdIncludingInactive":4110352,"createdAt":"2022-10-06T10:04:12.997Z","updatedAt":"2025-02-04T15:38:05.390Z","archived":false},{"id":"240826986","email":"sandra@careerfoundry.com","type":"PERSON","firstName":"Sandra","lastName":"Fischer","userId":26951260,"userIdIncludingInactive":26951260,"createdAt":"2022-10-06T10:04:13.043Z","updatedAt":"2022-10-06T10:04:13.043Z","archived":false},{"id":"240829346","email":"jennifer@careerfoundry.com","type":"PERSON","firstName":"Jennifer","lastName":"Chan","userId":9429444,"userIdIncludingInactive":9429444,"createdAt":"2022-10-06T10:04:13.345Z","updatedAt":"2022-10-06T10:04:13.345Z","archived":false},{"id":"240829347","email":"martin@careerfoundry.com","type":"PERSON","firstName":"Martin","lastName":"Ramsin","userId":1150365,"userIdIncludingInactive":1150365,"createdAt":"2022-10-06T10:04:13.393Z","updatedAt":"2022-10-06T10:04:13.393Z","archived":false},{"id":"240829350","email":"marco.migliore@careerfoundry.com","type":"PERSON","firstName":"Marco","lastName":"Migliore","userId":45983721,"userIdIncludingInactive":45983721,"createdAt":"2022-10-06T10:04:13.531Z","updatedAt":"2024-04-08T08:03:36.583Z","archived":false},{"id":"240829351","email":"crystal.us@careerfoundry.com","type":"PERSON","firstName":"Crystal","lastName":"at
+        CareerFoundry","userId":12064990,"userIdIncludingInactive":12064990,"createdAt":"2022-10-06T10:04:13.570Z","updatedAt":"2025-03-25T15:54:18.957Z","archived":false},{"id":"240829352","email":"breanna@careerfoundry.com","type":"PERSON","firstName":"Breanna","lastName":"at
+        CareerFoundry","userId":5359440,"userIdIncludingInactive":5359440,"createdAt":"2022-10-06T10:04:13.611Z","updatedAt":"2025-03-12T14:25:33.905Z","archived":false},{"id":"240829353","email":"danielle@careerfoundry.com","type":"PERSON","firstName":"Danielle","lastName":"Sander","userId":4544515,"userIdIncludingInactive":4544515,"createdAt":"2022-10-06T10:04:13.650Z","updatedAt":"2025-03-24T14:49:49.867Z","archived":false},{"id":"240829354","email":"esther@careerfoundry.com","type":"PERSON","firstName":"Esther","lastName":"at
+        CareerFoundry","userId":44042546,"userIdIncludingInactive":44042546,"createdAt":"2022-10-06T10:04:13.708Z","updatedAt":"2024-06-19T11:35:57.070Z","archived":false},{"id":"240829355","email":"sarah@careerfoundry.com","type":"PERSON","firstName":"Sid","lastName":"O''Sullivan","userId":28473554,"userIdIncludingInactive":28473554,"createdAt":"2022-10-06T10:04:13.751Z","updatedAt":"2022-10-06T10:04:13.751Z","archived":false},{"id":"240829356","email":"pauline@careerfoundry.com","type":"PERSON","firstName":"Pauline","lastName":"Holl","userId":25235329,"userIdIncludingInactive":25235329,"createdAt":"2022-10-06T10:04:13.793Z","updatedAt":"2022-10-06T10:04:13.793Z","archived":false},{"id":"250772263","email":"ryan.e@careerfoundry.com","type":"PERSON","firstName":"Ryan","lastName":"Ernst","userId":24681927,"userIdIncludingInactive":24681927,"createdAt":"2022-10-25T14:57:47.170Z","updatedAt":"2023-05-17T13:28:13.441Z","archived":false},{"id":"278141457","email":"sofia@careerfoundry.com","type":"PERSON","firstName":"Sofia","lastName":"at
+        CareerFoundry","userId":28370408,"userIdIncludingInactive":28370408,"createdAt":"2022-12-05T11:20:54.124Z","updatedAt":"2022-12-05T11:20:54.124Z","archived":false},{"id":"288292001","email":"jesus@careerfoundry.com","type":"PERSON","firstName":"Gess","lastName":"Gallardo","userId":25416195,"userIdIncludingInactive":25416195,"createdAt":"2022-12-19T08:35:41.169Z","updatedAt":"2025-03-27T17:56:07.536Z","archived":false},{"id":"611543323","email":"nicholas@careerfoundry.com","type":"PERSON","firstName":"Nick","lastName":"Marcantel","userId":11976580,"userIdIncludingInactive":11976580,"createdAt":"2023-11-15T11:42:04.180Z","updatedAt":"2025-03-17T07:30:51.296Z","archived":false},{"id":"681206839","email":"korina@careerfoundry.com","type":"PERSON","firstName":"Korina","lastName":"Pazitka","userId":2294980,"userIdIncludingInactive":2294980,"createdAt":"2024-10-09T08:49:36.836Z","updatedAt":"2024-11-21T16:06:27.236Z","archived":false},{"id":"698214154","email":"oliwia@careerfoundry.com","type":"PERSON","firstName":"Oliwia","lastName":"at
+        CareerFoundry","userId":49395514,"userIdIncludingInactive":49395514,"createdAt":"2024-01-22T14:43:15.474Z","updatedAt":"2025-03-27T11:12:48.011Z","archived":false},{"id":"948563915","email":"nastassja@careerfoundry.com","type":"PERSON","firstName":"Nasta","lastName":"at
+        CareerFoundry","userId":46722009,"userIdIncludingInactive":46722009,"createdAt":"2024-03-18T17:18:58.334Z","updatedAt":"2024-12-02T10:24:28.451Z","archived":false}]}'
+  recorded_at: Thu, 27 Mar 2025 19:13:16 GMT
+recorded_with: VCR 6.3.1
