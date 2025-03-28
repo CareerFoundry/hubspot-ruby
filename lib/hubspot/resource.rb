@@ -20,6 +20,7 @@ module Hubspot
         instance = new(id)
         instance.reload
       end
+      alias_method :find_by_id, :find
 
       def create(properties = {})
         request = {
