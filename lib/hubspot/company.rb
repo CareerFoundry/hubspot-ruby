@@ -121,6 +121,107 @@ class Hubspot::Company < Hubspot::Resource
 
       true
     end
+
+    attr_reader :properties, :vid, :name
+
+    def [](property)
+      @properties[property]
+    end
+
+    # Updates the properties of companies
+    # NOTE: Up to 100 companies can be updated in a single request. There is no limit to the number of properties that can be updated per company.
+    # {https://developers.hubspot.com/docs/methods/companies/batch-update-companies}
+    # Returns a 202 Accepted response on success.
+    def batch_update!(companies)
+      query = companies.map do |company|
+        company_hash = company.with_indifferent_access
+        if company_hash[:vid]
+          # For consistency - Since vid has been used everywhere.
+          company_param = {
+            objectId: company_hash[:vid],
+            properties: Hubspot::Utils.hash_to_properties(company_hash.except(:vid).stringify_keys!, key_name: 'name'),
+          }
+        elsif company_hash[:objectId]
+          company_param = {
+            objectId: company_hash[:objectId],
+            properties: Hubspot::Utils.hash_to_properties(company_hash.except(:objectId).stringify_keys!, key_name: 'name'),
+          }
+        else
+          raise Hubspot::InvalidParams, 'expecting vid or objectId for company'
+        end
+        company_param
+      end
+      Hubspot::Connection.post_json(BATCH_UPDATE_PATH, params: {}, body: query)
+    end
+
+    # Adds contact to a company
+    # {http://developers.hubspot.com/docs/methods/companies/add_contact_to_company}
+    # @param company_vid [Integer] The ID of a company to add a contact to
+    # @param contact_vid [Integer] contact id to add
+    # @return parsed response
+    def add_contact!(company_vid, contact_vid)
+      Hubspot::Connection.put_json(ADD_CONTACT_TO_COMPANY_PATH,
+                                    params: {
+                                      company_id: company_vid,
+                                      vid: contact_vid,
+                                    },
+                                    body: nil)
+    end
+  end
+
+  # Updates the properties of a company
+  # {http://developers.hubspot.com/docs/methods/companies/update_company}
+  # @param params [Hash] hash of properties to update
+  # @return [Hubspot::Company] self
+  def update!(params)
+    query = {"properties" => Hubspot::Utils.hash_to_properties(params.stringify_keys!, key_name: "name")}
+    Hubspot::Connection.put_json(UPDATE_COMPANY_PATH, params: { company_id: vid }, body: query)
+    @properties.merge!(params)
+    self
+  end
+
+  # Gets ALL contact vids of a company
+  # May make many calls if the company has a mega-ton of contacts
+  # {http://developers.hubspot.com/docs/methods/companies/get_company_contacts_by_id}
+  # @return [Array] contact vids
+  def get_contact_vids
+    vid_offset = nil
+    vids = []
+    loop do
+      data = Hubspot::Connection.get_json(GET_COMPANY_CONTACT_VIDS_PATH,
+                                          company_id: vid,
+                                          vidOffset: vid_offset)
+      vids += data['vids']
+      return vids unless data['hasMore']
+      vid_offset = data['vidOffset']
+    end
+    vids # this statement will never be executed.
+  end
+
+  # Adds contact to a company
+  # {http://developers.hubspot.com/docs/methods/companies/add_contact_to_company}
+  # @param id [Integer] contact id to add
+  # @return [Hubspot::Company] self
+  def add_contact(contact_or_vid)
+    contact_vid = if contact_or_vid.is_a?(Hubspot::Contact)
+                    contact_or_vid.vid
+                  else
+                    contact_or_vid
+                  end
+    self.class.add_contact!(vid, contact_vid)
+    self
+  end
+
+  # Archives the company in hubspot
+  # {http://developers.hubspot.com/docs/methods/companies/delete_company}
+  # @return [TrueClass] true
+  def destroy!
+    Hubspot::Connection.delete_json(DESTROY_COMPANY_PATH, { company_id: vid })
+    @destroyed = true
+  end
+
+  def destroyed?
+    !!@destroyed
   end
 
   def contacts(opts = {})
