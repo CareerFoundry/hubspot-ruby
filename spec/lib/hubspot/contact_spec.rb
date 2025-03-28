@@ -106,6 +106,18 @@ RSpec.describe Hubspot::Contact do
     end
   end
 
+  describe '.find_by_id' do
+    cassette
+
+    let(:contact) { create :contact }
+    subject { described_class.find_by_id contact.id }
+
+    it 'finds the contact' do
+      expect(subject).to be_a(described_class)
+      expect(subject.id).to eq(contact.id)
+    end
+  end
+
   describe '.find_by_email' do
     cassette
 
