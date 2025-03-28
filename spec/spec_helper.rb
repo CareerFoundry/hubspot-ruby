@@ -13,10 +13,12 @@ end
 require 'rspec'
 require 'webmock/rspec'
 require 'hubspot-ruby'
+require 'factory_bot'
+require 'faker'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
-Dir["#{RSPEC_ROOT}/support/**/*.rb"].each {|f| require f}
+Dir["#{RSPEC_ROOT}/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
   config.mock_with :rr
@@ -27,4 +29,9 @@ RSpec.configure do |config|
 
   config.extend CassetteHelper
   config.extend TestsHelper
+
+  config.include FactoryBot::Syntax::Methods
+  config.before(:suite) do
+    FactoryBot.find_definitions
+  end
 end
