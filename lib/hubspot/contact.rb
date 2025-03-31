@@ -72,7 +72,15 @@ class Hubspot::Contact < Hubspot::Resource
     end
   end
 
-  attr_reader :properties, :vid, :is_new, :is_contact, :list_memberships
+  attr_reader :properties, :is_new, :is_contact, :list_memberships
+
+  def vid
+    @id
+  end
+
+  def vid=(id)
+    @id = id
+  end
 
   def [](property)
     @properties[property]
